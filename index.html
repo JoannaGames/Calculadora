@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora Avanzada</h1>
+    
+    <!-- Sección con el nombre y descripción -->
+    <h2>León Ochoa Cristian Jesús</h2>
+    <p>Soy estudiante universitario con un enfoque en el desarrollo de habilidades en ciencias exactas y matemáticas. A lo largo de mi carrera, he adquirido conocimientos en áreas como programación, álgebra, geometría y cálculo, los cuales he utilizado para resolver problemas complejos y prácticos. Además, tengo un gran interés en la tecnología y la innovación, lo que me motiva a explorar nuevas herramientas y métodos de aprendizaje.</p>
+
+    <div id="menu">
+        <button id="btnAritmetica">Calculadora Aritmética</button>
+        <button id="btnGeometrica">Calculadora Geométrica</button>
+    </div>
+
+    <!-- Sección para la Calculadora Aritmética -->
+    <div id="calculadoraAritmetica" class="hidden">
+        <h2>Calculadora Aritmética</h2>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button id="ac">AC</button>
+            <button id="de">DE</button>
+            <button id="/">/</button>
+            <button id="*">*</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="-">-</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="+">+</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="0">0</button>
+            <button id="=">=</button>
+        </div>
+    </div>
+
+    <!-- Sección para la Calculadora Geométrica -->
+    <div id="calculadoraGeometrica" class="hidden">
+        <h2>Calculadora Geométrica</h2>
+        <select id="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="circulo">Círculo</option>
+            <option value="cubo">Cubo</option>
+        </select>
+        <div id="inputsGeometria"></div>
+        <button id="calcularGeometria">Calcular</button>
+        <p id="resultadoGeometria"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
